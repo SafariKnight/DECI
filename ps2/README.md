@@ -1,3 +1,9 @@
+The challenges done in Level 3 Web Development in the year 2024 during the second physical session
+
+Each `s#` corresponds to a station number, I.E. `s1` is Station 1, `s2` is Station 2
+
+Each Station is composed up of 4 challenges that have some sort of common theme
+
 ### Station 1
 - Create variables of different types (string, number, boolean, array) and perform operations that showcase their respective behaviors.
 - Convert a number to a string and vice versa. Explore different methods for type
