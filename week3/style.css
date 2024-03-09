@@ -1,0 +1,91 @@
+body {
+  background-color: bisque;
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  align-self: center;
+}
+
+#wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+/* Add margin between navigation elements */
+nav ul li {
+  /* margin-right: i20px; */
+  list-style: none;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: inherit;
+  border: .125rem solid #a6a6a6;
+  padding: 20px;
+  gap: 50px;
+}
+
+/* Target the h2 element with the id "title" */
+#title {
+  color: blue; /* Change color to your preference */
+}
+
+/* Add a class named "featured" to span elements */
+span.featured {
+  font-weight: bold;
+  /* Add any other styling you want */
+}
+
+section {
+  border: .25rem gray dashed;
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  flex-grow: 1;
+  gap: 1rem;
+  border: .125rem solid gray;
+  padding: 2rem;
+  align-self: stretch;
+  justify-content: center;
+  /* flex-grow: 1; */
+}
+
+input, button {
+
+  background-color: black;
+  color: white;
+}
+
+input {
+  /* color: black; */
+  border-radius: 5rem;
+  border: none;
+  padding: .25rem 1rem;
+}
+
+button {
+  border-radius: 5rem;
+  border: none;
+}

@@ -1,0 +1,41 @@
+main {
+  background-color: #f8d4a5;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#nav > li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+  /* border: 1px gray solid; */
+  /* padding: 5px */
+}
+
+#nav {
+  border: 1px gray solid;
+  padding: 3px;
+}
+
+#nav a {
+  text-decoration: none;
+}
+
+article {
+  border: 2px black solid;
+  border-radius: 1rem;
+  background-color: tan;
+}
+
+#blog-header {
+  border-top: 1px gray solid;
+  border-bottom: 1px gray solid;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+#store-info {
+  display: inline-block;
+  padding-top: 0.375rem;
+}
