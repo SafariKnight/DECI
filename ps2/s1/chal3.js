@@ -1,5 +1,5 @@
 
-console.log(true && true && false || true || false)
+console.log(true && true && false || true || false) 
 
 const isTrue = false
 
