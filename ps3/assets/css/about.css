@@ -1,0 +1,59 @@
+@import url(global.css);
+
+
+.page {
+  grid-template-columns: auto;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+main {
+  grid-area: content;
+  padding: 20px;
+  background-color: var(--clr-background-alternate);
+  color: var(--clr-text-alternate);
+  max-width: 50rem;
+  border-radius: 5px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content img,
+.content p {
+  flex: 1;
+  margin: 20px;
+}
+
+
+/* nav { */
+/*   display: flex; */
+/*   justify-content: center; */
+/*   align-items: center; */
+/*   background-color: #333; */
+/*   padding: 10px 0; */
+/*   width: 100%; */
+/*   grid-area: header; */
+/* } */
+/**/
+/* nav ul { */
+/*   list-style: none; */
+/*   padding: 0; */
+/* } */
+/**/
+/* nav ul li { */
+/*   display: inline; */
+/* } */
+/**/
+/* nav ul li a { */
+/*   color: white; */
+/*   text-decoration: none; */
+/*   padding: 0 15px; */
+/* } */
+/**/
+/* nav ul li a:hover { */
+/*   text-decoration: underline; */
+/* } */
+
