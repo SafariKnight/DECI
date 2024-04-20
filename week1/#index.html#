@@ -18,7 +18,7 @@
         <fieldset>
           <legend>Your Information</legend>
           <label>
-            Your name:
+            Your name
             <input type="text" placeholder="Type your name" required />
           </label>
           <br />
