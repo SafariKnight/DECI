@@ -6,6 +6,7 @@ document.body.appendChild(newParagraph);
 document.querySelectorAll("p").forEach((paragraph) => {
   paragraph.style.color = "Green";
 });
+
 // }}}
 
 // Bonus 1 {{{
