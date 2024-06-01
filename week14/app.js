@@ -1,5 +1,5 @@
 // One
-let name = "Kareem";
+let name = "K";
 console.log(name);
 
 // Two
@@ -19,13 +19,16 @@ for (const color of colors) {
 
 // Six
 const person = {
-  name: "Kareem",
+  name: "Ahmed",
   age: 15,
   profession: "student",
 };
 
 // Seven
 const { name: userName, age, profession } = person;
+console.log(userName)
+console.log(age)
+console.log(profession)
 
 // Eight
 const moreColors = ["orange", "violet", "purple"];
@@ -61,9 +64,11 @@ console.log(studentName);
 console.log(studentAge);
 
 // Fifteen
-function mergeObjects(obj1, obj2) {
-  return { ...obj1, ...obj2 };
-}
+// function mergeObjects(obj1, obj2) {
+//   return { ...obj1, ...obj2 };
+// }
+
+const mergeObjects = (obj1, obj2) => ({ ...obj1, ...obj2 });
 
 console.log(mergeObjects(person, student));
 
