@@ -1,0 +1,14 @@
+body {
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background: whitesmoke;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+
+  /* margin-inline: auto; */
+}
