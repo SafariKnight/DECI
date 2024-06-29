@@ -1,0 +1,40 @@
+@import url(shared.css);
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main>ul {
+  width: 90%;
+}
+
+#task-list li {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#task-list button {
+  color: black;
+  background: red;
+  border-radius: 10px;
+  width: 5rem;
+  border: 0px solid black;
+}
+
+#task-form {
+  display: flex;
+}
+
+#task-form > * {
+  flex-grow: 1;
+}
+
+@media (max-width: 800px) {
+  #task-form {
+    flex-direction: column;
+  }
+}
