@@ -1,9 +1,21 @@
+body {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+}
+
 p {
   font-size: 16px;
   font-weight: bold;
   color: blue;
 }
 
-.alternative-font-size {
+.alternative-paragraph {
   font-size: 24px;
+  color: red;
+  font-family: system-ui;
+  border: 3px solid black;
+  padding-inline: 1rem;
+  background: lightgray;
 }
