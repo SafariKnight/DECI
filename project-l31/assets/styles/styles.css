@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  background-color: var(--background);
+  color: var(--text);
+  /* padding: 0 1.25rem; */
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+a:hover {
+  color: var(--text-emphasis);
+}
+
+.border {
+  border-bottom: var(--border);
+  border-top: var(--border);
+}
+
+.border-full {
+  border: var(--border);
+}
+
+.seperated {
+  margin: 0.5rem;
+}
+
+.seperated-l {
+  margin: 1rem;
+}
+
+.padded {
+  padding: 1.125rem;
+}
+
+.padded-vertical {
+  padding: 1.125rem 0;
+}
+.padded-horizontal {
+  padding: 0 1.125rem;
+}
+
+.text-emphasis {
+  color: var(--text-emphasis);
+}
+.text-emphasis-secondary {
+  color: var(--text-emphasis-secondary);
+}
+
+.alternate-font {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Nesting Styles inside each other */
+  /* Very Nice to read */
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 0.75rem;
+  }
+
+  > div:hover {
+    color: var(--text-emphasis);
+    span {
+      color: var(--text);
+    }
+  }
+  border-bottom: var(--border);
+}
+
+@media (width < 600px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+footer {
+  background-color: var(--background-secondary);
+  margin-top: 1rem;
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+  }
+}
