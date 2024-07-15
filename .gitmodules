@@ -1,6 +1,6 @@
-[submodule "Project Level3-1"]
+[submodule "project-l31"]
 	path = project-l31
 	url = git@github.com:SafariKnight/DECI-Level3-Project.git
-[submodule "Project Level3-2"]
+[submodule "project-l32"]
 	path = project-l32
-	url = git@github.com:SafariKnight/Deci-Level3-2-Project.git
+	url = git@github.com:SafariKnight/DECI-Level3-2-Project.git
