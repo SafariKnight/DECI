@@ -1,11 +1,11 @@
 ## Requirements
-1. Recipe Book Functionality:
-  - An input box to enter new recipes.
-  - A button to add the entered recipe to the list.
-  - Each recipe should be displayed on the page dynamically as it is added.
   - Each recipe should have a button to view details, edit, or remove it from the list.
   - A search bar to filter recipes by name.
 2. Navigation Bar:
+1. Recipe Book Functionality:
+- An input box to enter new recipes.
+  - A button to add the entered recipe to the list.
+  - Each recipe should be displayed on the page dynamically as it is added.
   - A responsive navigation bar that includes links to:
   - The main page with the recipe book.
   - An "About Us" page.
