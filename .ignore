@@ -1,0 +1,6 @@
+jj/
+nix/
+.direnv/
+.envrc
+.ignore
+**/.github/
