@@ -1,5 +1,7 @@
 function createGame(min, max) {
+
   let secret = min + Math.floor(Math.random() * (max + 1));   
+
   function guessNumber(guess) {
     switch (true) {
       case guess > secret:
@@ -15,7 +17,7 @@ function createGame(min, max) {
   return guessNumber;
 }
 
-const guessNumber = createGame(0, 10);
+const guessNumber = createGame(1, 10);
 
 let won = false;
 let message = "Guess a Number";
