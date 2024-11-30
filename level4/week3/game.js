@@ -6,10 +6,8 @@ function getRandomModifier() {
 
 class Character {
   constructor(name, health, attack, mana) {
-    if (mana <= 0) return;
     this.name = name
     this.health = health
-    this.maxHealth = health;
     this.attack = attack;
     this.mana = mana;
   }
