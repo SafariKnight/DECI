@@ -3,6 +3,7 @@ function WarriorRoom1(name, health, weapon = { name: 'None', damage: 0, durabili
   this.health = health;
   this.weapon = weapon;
   this.attack = function (target) {
+
     target.takeDamage(this.weapon.damage);
     // takeDamage(target, this.weapon.damage)
   };
@@ -20,5 +21,17 @@ function WarriorRoom1(name, health, weapon = { name: 'None', damage: 0, durabili
   };
 }
 
-const player = new WarriorRoom1("Help", 100);
-console.log(player.name)
+const weapon = {
+  name: "Sword",
+  damage: 10,
+  durability: 200,
+}
+
+const player = new WarriorRoom1("Kareem", 100);
+const enemy = new WarriorRoom1("Ahmed", 100);
+
+player.assignWeapon(weapon);
+
+player.attack(enemy)
+
+console.log(enemy.health)
