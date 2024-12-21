@@ -20,7 +20,7 @@ function fetchRandomPokemonData(id) {
 }
 
 function displayPokemonData() {
-  fetchRandomPokemonData(randomNum(1, 898))
+  fetchRandomPokemonData(randomNum(1, 1025))
     .then((pokemon) => {
       console.log(`Name: ${pokemon.name}`)
       console.log(`Weight: ${pokemon.weight / 10}kg`)

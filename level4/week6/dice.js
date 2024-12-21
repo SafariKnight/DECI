@@ -8,7 +8,7 @@ function rollDice() {
       () => {
         resolve(randomNum(1, 6));
       },
-      randomNum(1000, 1000),
+      randomNum(1000, 3000),
     );
   });
 }
