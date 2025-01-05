@@ -1,4 +1,4 @@
-async function fetchRandomUserDataPromise() {
+function fetchRandomUserDataPromise() {
   return fetch("https://randomuser.me/api/")
     .then((response) => response.json())
     .then((response) => {
@@ -13,14 +13,14 @@ async function fetchRandomUserDataPromise() {
     });
 }
 
-async function displayUserDataPromise() {
+function displayUserDataPromise() {
   fetchRandomUserDataPromise()
     .then((user) => {
       console.log(`Name: ${user.name}`);
       console.log(`Email: ${user.email}`);
     })
     .catch((error) => {
-      console.warn(error.message);
+      console.error(error.message);
     });
 }
 
