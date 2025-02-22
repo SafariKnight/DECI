@@ -30,13 +30,23 @@ async function fetchPosts() {
 
 async function fetchData() {
   try {
-
-  const user = await fetchUsers();
-  const post = await fetchPosts();
-
-  return { user, post};
-  } catch(err) {
-    console.log(`Error while fetching while fetching data :: ${err}`)
+    const users = await fetchUsers();
+    const posts = await fetchPosts();
+    const data = [];
+    users.forEach((user) => {
+      data.push({
+        user: user,
+        posts: [],
+      });
+      posts.forEach((post) => {
+        if (post.userId === data[data.length - 1].user.id) {
+          data[data.length - 1].posts.push(post)
+        }
+      });
+    });
+    return data
+  } catch (err) {
+    console.log(`Error while fetching while fetching data :: ${err}`);
   }
 }
 
