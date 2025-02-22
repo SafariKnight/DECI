@@ -32,19 +32,11 @@ async function fetchData() {
   try {
     const users = await fetchUsers();
     const posts = await fetchPosts();
-    const data = [];
-    users.forEach((user) => {
-      data.push({
-        user: user,
-        posts: [],
-      });
-      posts.forEach((post) => {
-        if (post.userId === data[data.length - 1].user.id) {
-          data[data.length - 1].posts.push(post)
-        }
-      });
-    });
-    return data
+
+    return users.map(user => ({
+      user,
+      posts: posts.filter((post) => post.userId === user.id)
+    }))
   } catch (err) {
     console.log(`Error while fetching while fetching data :: ${err}`);
   }
