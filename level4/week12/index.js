@@ -30,17 +30,19 @@ async function fetchPosts() {
 
 async function fetchData() {
   try {
-    const users = await fetchUsers();
-    const posts = await fetchPosts();
+    const [users, posts] = await Promise.all([fetchUsers(), fetchPosts()]); // Combine user and post information
 
-    return users.map(user => ({
+    return users.map((user) => ({
       user,
-      posts: posts.filter((post) => post.userId === user.id)
-    }))
+      posts: posts.filter((post) => post.userId === user.id),
+    }));
   } catch (err) {
     console.log(`Error while fetching while fetching data :: ${err}`);
   }
 }
+
+
+
 
 const returnedUsers = await fetchData();
 console.log(returnedUsers);
